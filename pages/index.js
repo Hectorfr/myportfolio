@@ -78,8 +78,8 @@ export default function Home() {
               </p>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-white">
-              <AiFillLinkedin />
-              <AiFillGithub />
+                  <a href="https://www.linkedin.com/in/hector-fr/" target="_blank" rel="noreferrer" ><AiFillLinkedin /></a>
+                  <a href="https://github.com/Hectorfr" target="_blank" rel="noreferrer"><AiFillGithub /></a>
             </div>
             
           </section>
@@ -91,7 +91,7 @@ export default function Home() {
             </div>
 
             <div className="lg:flex gap-10">
-                <div className="mx-center text-center shadow-lg p-10 rounded-xl my-10">
+                <div className="mx-center text-center shadow-xl p-10 rounded-xl my-10 dark:shadow-2xl">
                   <div className="flex items-center justify-center">
                     <Image src={code} width={100} height={100}/>
                   </div>
@@ -172,28 +172,26 @@ export default function Home() {
 
           </section>
 
-
-
-          <section>
-            <div>
-
-              <h3 className="text-3xl py-1">Projects</h3>
-
-              <p className="text-md py-5 leading-8 text-gray-80">
-                  I offer many things like this and the other.
-                  <span className="text-teal-500">But also this</span>But also the other
-              </p>
-            </div>
-            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-              <div className="basis-1/3 flex-1"><Image src={web1} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/></div>
-              <div className="basis-1/3 flex-1"><Image src={web2} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/></div>
-              <div className="basis-1/3 flex-1"><Image src={web3} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/></div>
-              <div className="basis-1/3 flex-1"><Image src={web4} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/></div>
-              <div className="basis-1/3 flex-1"><Image src={web5} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/></div>
-              <div className="basis-1/3 flex-1"><Image src={web6} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/></div>
-            </div>
-          </section>
         </main>
+
+
+        <footer className="bg-emerald-200 rounded border-t-4 border-cyan-900 dark:bg-gray-900 ">
+          <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span className="text-sm sm:text-center dark:text-gray-400">© 2023 <a className="hover:underline">Hector</a>. All Rights Reserved.
+            </span>
+          <ul className="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-gray-400 sm:mt-0">
+              <li>
+                  <a href="#" className="mr-4 hover:underline md:mr-6 ">About</a>
+              </li>
+              <li>
+                  <a href="#" className="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+              </li>
+              <li>
+                  <a href="#" className="hover:underline">Contact</a>
+              </li>
+          </ul>
+          </div>
+        </footer>
 
 
       </div>
