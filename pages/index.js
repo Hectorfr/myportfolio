@@ -1,7 +1,10 @@
 import Head from "next/head";
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
-import {FaTerminal, FaUserSecret} from 'react-icons/fa';
-import {SiJavascript, SiTailwindcss, SiReact} from 'react-icons/si';
+import {FaTerminal, FaUserSecret, FaJava} from 'react-icons/fa';
+import {SiJavascript, SiTailwindcss, SiReact, SiPython, SiCplusplus} from 'react-icons/si';
+import {TbBrandNextjs} from 'react-icons/tb';
+import {VscTerminalBash, VscTerminalPowershell, VscServerEnvironment} from 'react-icons/vsc';
+
 
 
 import {useState} from "react";
@@ -103,6 +106,7 @@ export default function Home() {
                     <SiTailwindcss />
                     <SiJavascript />
                     <SiReact />
+                    <TbBrandNextjs />
                   </div>
                 </div>
 
@@ -113,16 +117,14 @@ export default function Home() {
                   </div>
                   <h3 className="text-lg font-medium pt-8 pb-2 font-burtons">car detection</h3>
                   <p className="py-2 p-10">
-                  Due to the importance of sleeping as much as possible during University, in this case I showcased my python skills
+                    Due to the importance of sleeping as much as possible during University, in this case I showcased my python skills
                     to from a video capture the amount of cars crossing the main street conecting my house and University, to then make 
                     graphs to determine the best and worst times to leave for school in the morning.
                   </p>
 
                   <h4 className="py-2 text-teal-600">Tools used</h4>
                   <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-white">
-                    <SiTailwindcss />
-                    <SiJavascript />
-                    <SiReact />
+                    <SiPython />
                   </div>
                 </div>
 
@@ -131,18 +133,36 @@ export default function Home() {
                   <div className="flex items-center justify-center">
                     <Image src={consulting} width={100} height={100}/>
                   </div>
-                  <h3 className="text-lg font-medium pt-8 pb-2 font-burtons">car detection</h3>
+                  <h3 className="text-lg font-medium pt-8 pb-2 font-burtons">Scripting projects</h3>
                   <p className="py-2 p-10">
-                  Due to the importance of sleeping as much as possible during University, in this case I showcased my python skills
-                    to from a video capture the amount of cars crossing the main street conecting my house and University, to then make 
-                    graphs to determine the best and worst times to leave for school in the morning.
+                    I fisrt learned about scripts in my first intern job, where they used complex and detailed scripts to automate operations, 
+                    as this was a company with more than 400 operational servers, so I decided to learn about to it, understand it and do some scripting of my own.
                   </p>
 
                   <h4 className="py-2 text-teal-600">Tools used</h4>
                   <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-white">
-                    <SiTailwindcss />
-                    <SiJavascript />
-                    <SiReact />
+                    <VscTerminalBash />
+                    <VscTerminalPowershell />
+                    <VscServerEnvironment />
+                  </div>
+
+
+                </div>
+
+                <div className="mx-center text-center shadow-lg p-10 rounded-xl my-10">
+                  <div className="flex items-center justify-center">
+                    <Image src={consulting} width={100} height={100}/>
+                  </div>
+                  <h3 className="text-lg font-medium pt-8 pb-2 font-burtons">Scripting projects</h3>
+                  <p className="py-2 p-10">
+                    CP is a concept which was introduced to me trough a friend in my first year in University, since then I have always been keen to learn more
+                    and more algorithms, data structures, dynamic programming to get better at it, compete and keep on learning. Here is some of my work in this area.
+                  </p>
+
+                  <h4 className="py-2 text-teal-600">Tools used</h4>
+                  <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-white">
+                    <SiCplusplus />
+                    <FaJava />
                   </div>
 
 
