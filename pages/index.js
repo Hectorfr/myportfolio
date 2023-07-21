@@ -18,9 +18,6 @@ import {useState} from "react";
 
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
-
 
 
 
@@ -66,7 +63,7 @@ export default function Home() {
   
               <p className="text-md py-5 leading-8 max-w-lg mx-auto p-10 md:text-xl">
                 Freelancer providing services for any programming needs, currently studying <span className="text-blue-700">Computer Science</span> in University.
-                I am keen to contiue building on with   <span className="text-blue-700">new challenges</span>, if you find this work interesting, you are more than welcome to contact me.
+                I am keen to continue building on with   <span className="text-blue-700">new challenges</span>, if you find this work interesting, you are more than welcome to contact me.
               </p>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-white">
@@ -82,6 +79,9 @@ export default function Home() {
               <h3 className="text-3xl text-center py-2">Proyects Overview</h3>    
               <p className="py-2 p-10 text-center text-blue-700">
                 For more info try cliking the icons!
+              </p>
+              <p className="py-2 p-10 text-center text-blue-700">
+                Stay tuned to check the in progress blurred proyects!
               </p>
             </div>
 
@@ -109,9 +109,9 @@ export default function Home() {
                 </div>
 
 
-                <div className="mx-center text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-2xl dark:border-1 dark:border-cyan-800">
+                <div className="mx-center text-center shadow-lg p-10 rounded-xl my-10 filter blur dark:shadow-2xl dark:border-1 dark:border-cyan-800">
                   <div className="flex items-center justify-center">
-                    <a href="https://github.com/Hectorfr/myportfolio" target="_blank" rel="noreferrer" className="text-cyan-900">  
+                    <a target="_blank" rel="noreferrer" className="text-cyan-900">  
                         <BiCar size={80}/>
                     </a>   
                  </div>
@@ -133,13 +133,13 @@ export default function Home() {
 
                 <div className="mx-center text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-2xl dark:border-1 dark:border-cyan-800">
                 <div className="flex items-center justify-center">
-                    <a href="https://github.com/Hectorfr/myportfolio" target="_blank" rel="noreferrer" className="text-cyan-900">  
+                    <a href="https://github.com/Hectorfr/batch-sandbox" target="_blank" rel="noreferrer" className="text-cyan-900">  
                         <TbScript size={80}/>
                     </a>   
                  </div>
                   <h3 className="text-lg pt-8 pb-2 font-burtons font-bold ">Scripting projects</h3>
                   <p className="py-2 p-10">
-                    I fisrt learned about scripts in my first intern job, where they used complex and detailed scripts to automate operations, 
+                    I first learned about scripts in my first intern job, where they used complex and detailed scripts to automate operations, 
                     as this was a company with more than 400 operational servers, so I decided to learn about to it, understand it and do some scripting of my own.
                   </p>
 
@@ -155,7 +155,7 @@ export default function Home() {
 
                 <div className="mx-center text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-2xl dark:border-1 dark:border-cyan-800">
                 <div className="flex items-center justify-center">
-                    <a href="https://github.com/Hectorfr/myportfolio" target="_blank" rel="noreferrer" className="text-cyan-900">  
+                    <a href="https://github.com/Hectorfr/Domjudge-exercises" target="_blank" rel="noreferrer" className="text-cyan-900">  
                         <GiTrophy size={80}/>
                     </a>   
                  </div>
