@@ -2,9 +2,13 @@ import Head from "next/head";
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 import {FaTerminal, FaUserSecret, FaJava} from 'react-icons/fa';
 import {SiJavascript, SiTailwindcss, SiReact, SiPython, SiCplusplus} from 'react-icons/si';
-import {TbBrandNextjs} from 'react-icons/tb';
+import {TbBrandNextjs, TbScript} from 'react-icons/tb';
 import {VscTerminalBash, VscTerminalPowershell, VscServerEnvironment} from 'react-icons/vsc';
+import {BiShow, BiCar} from 'react-icons/bi';
 
+
+import { GiTrophy } from 'react-icons/gi';
+import {BsPersonVcardFill} from 'react-icons/bs'
 
 
 import {useState} from "react";
@@ -14,15 +18,8 @@ import {useState} from "react";
 
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png";
-import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
 
 
 
@@ -50,13 +47,8 @@ export default function Home() {
                     <FaUserSecret onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl "/>
                   </li>
                   <li>
-                    <a className="bg-gradient-to-r from-cyan-700 to-emerald-500 px-4 py-2 rounded-md ml-4" href="#">
+                    <a className="bg-gradient-to-r from-cyan-700 to-emerald-500 px-4 py-2 rounded-md ml-4" href="#projects">
                       Projects
-                    </a>
-                  </li>
-                  <li>
-                    <a className="bg-gradient-to-r from-cyan-700 to-emerald-500 px-4 py-2 rounded-md ml-2" href="#">
-                      Experience
                     </a>
                   </li>
               </ul>
@@ -73,8 +65,8 @@ export default function Home() {
             </div>
   
               <p className="text-md py-5 leading-8 max-w-lg mx-auto p-10 md:text-xl">
-                Freelancer providing services for any programming needs, cursing <span className="text-blue-700">Computer Science</span> in University.
-                I am keen to contiue building on with many  <span className="text-blue-700">new challenges</span>,if you find this work interesting, you are more than welcome to contact me.
+                Freelancer providing services for any programming needs, currently studying <span className="text-blue-700">Computer Science</span> in University.
+                I am keen to contiue building on with   <span className="text-blue-700">new challenges</span>, if you find this work interesting, you are more than welcome to contact me.
               </p>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-white">
@@ -86,22 +78,28 @@ export default function Home() {
 
           
           <section> 
-            <div>
+            <div id="projects">
               <h3 className="text-3xl text-center py-2">Proyects Overview</h3>    
+              <p className="py-2 p-10 text-center text-blue-700">
+                For more info try cliking the icons!
+              </p>
             </div>
 
-            <div className="lg:flex gap-10">
-                <div className="mx-center text-center shadow-xl p-10 rounded-xl my-10 dark:shadow-2xl">
+            <div className="2xl:flex gap-10">
+                <div className="mx-center text-center shadow-xl p-10 rounded-xl my-10 dark:shadow-2xl dark:border-1 dark:border-cyan-800">
                   <div className="flex items-center justify-center">
-                    <Image src={code} width={100} height={100}/>
+                    <a href="https://github.com/Hectorfr/myportfolio" target="_blank" rel="noreferrer" className="text-cyan-900">  
+                      <BsPersonVcardFill size={80}/>
+                    </a>
                   </div>
-                  <h3 className="text-lg font-medium pt-8 pb-2 font-burtons">portfolio website</h3>
+                  <h3 className="text-lg pt-8 pb-2 font-burtons font-bold">portfolio website</h3>
                   <p className="py-2 p-10">
                     In this project I have put to the test my front-end skills, where I have a created a website from scracth,
-                    this is a portfolio and as such it has to recieve updates whenever I engage or finish a proyect.
+                    this a portfolio showcases my proyects and as such it has to recieve updates whenever I engage or finish one.
+                    Also doing small changes to correct bugs and smooth out the user experience.
                   </p>
 
-                  <h4 className="py-2 text-teal-600">Tools used</h4>
+                  <h4 className="py-2 text-teal-600 dark:text-blue-700">Tools used</h4>
                   <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-white">
                     <SiTailwindcss />
                     <SiJavascript />
@@ -111,35 +109,41 @@ export default function Home() {
                 </div>
 
 
-                <div className="mx-center text-center shadow-lg p-10 rounded-xl my-10">
+                <div className="mx-center text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-2xl dark:border-1 dark:border-cyan-800">
                   <div className="flex items-center justify-center">
-                    <Image src={code} width={100} height={100}/>
-                  </div>
-                  <h3 className="text-lg font-medium pt-8 pb-2 font-burtons">car detection</h3>
+                    <a href="https://github.com/Hectorfr/myportfolio" target="_blank" rel="noreferrer" className="text-cyan-900">  
+                        <BiCar size={80}/>
+                    </a>   
+                 </div>
+                  <h3 className="text-lg pt-8 pb-2 font-burtons font-bold">car detection</h3>
                   <p className="py-2 p-10">
                     Due to the importance of sleeping as much as possible during University, in this case I showcased my python skills
-                    to from a video capture the amount of cars crossing the main street conecting my house and University, to then make 
+                    from a video the app captures the amount of cars crossing the main street conecting my house and University, to then makes
                     graphs to determine the best and worst times to leave for school in the morning.
+                    I also learned about venv (virtual enviroments), with independent installation of python at any version and it's necessary dependencies for that specific project.
+
                   </p>
 
-                  <h4 className="py-2 text-teal-600">Tools used</h4>
+                  <h4 className="py-2 text-teal-600 dark:text-blue-700">Tools used</h4>
                   <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-white">
                     <SiPython />
                   </div>
                 </div>
 
 
-                <div className="mx-center text-center shadow-lg p-10 rounded-xl my-10">
-                  <div className="flex items-center justify-center">
-                    <Image src={consulting} width={100} height={100}/>
-                  </div>
-                  <h3 className="text-lg font-medium pt-8 pb-2 font-burtons">Scripting projects</h3>
+                <div className="mx-center text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-2xl dark:border-1 dark:border-cyan-800">
+                <div className="flex items-center justify-center">
+                    <a href="https://github.com/Hectorfr/myportfolio" target="_blank" rel="noreferrer" className="text-cyan-900">  
+                        <TbScript size={80}/>
+                    </a>   
+                 </div>
+                  <h3 className="text-lg pt-8 pb-2 font-burtons font-bold ">Scripting projects</h3>
                   <p className="py-2 p-10">
                     I fisrt learned about scripts in my first intern job, where they used complex and detailed scripts to automate operations, 
                     as this was a company with more than 400 operational servers, so I decided to learn about to it, understand it and do some scripting of my own.
                   </p>
 
-                  <h4 className="py-2 text-teal-600">Tools used</h4>
+                  <h4 className="py-2 text-teal-600 dark:text-blue-700">Tools used</h4>
                   <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-white">
                     <VscTerminalBash />
                     <VscTerminalPowershell />
@@ -149,45 +153,45 @@ export default function Home() {
 
                 </div>
 
-                <div className="mx-center text-center shadow-lg p-10 rounded-xl my-10">
-                  <div className="flex items-center justify-center">
-                    <Image src={consulting} width={100} height={100}/>
-                  </div>
-                  <h3 className="text-lg font-medium pt-8 pb-2 font-burtons">Scripting projects</h3>
+                <div className="mx-center text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-2xl dark:border-1 dark:border-cyan-800">
+                <div className="flex items-center justify-center">
+                    <a href="https://github.com/Hectorfr/myportfolio" target="_blank" rel="noreferrer" className="text-cyan-900">  
+                        <GiTrophy size={80}/>
+                    </a>   
+                 </div>
+                  <h3 className="text-lg pt-8 pb-2 font-burtons font-bold">Competitive programming</h3>
                   <p className="py-2 p-10">
                     CP is a concept which was introduced to me trough a friend in my first year in University, since then I have always been keen to learn more
                     and more algorithms, data structures, dynamic programming to get better at it, compete and keep on learning. Here is some of my work in this area.
                   </p>
 
-                  <h4 className="py-2 text-teal-600">Tools used</h4>
+                  <h4 className="py-2 text-teal-600 dark:text-blue-700">Tools used</h4>
                   <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-white">
                     <SiCplusplus />
                     <FaJava />
                   </div>
-
-
                 </div>
+
             </div>
-
-
           </section>
 
+          <section>
+            .
+          </section>
+
+        
         </main>
 
-
-        <footer className="bg-emerald-200 rounded border-t-4 border-cyan-900 dark:bg-gray-900 ">
+        <footer className="bg-emerald-200 border-t-4 border-cyan-900 dark:bg-gray-900 ">
           <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
             <span className="text-sm sm:text-center dark:text-gray-400">© 2023 <a className="hover:underline">Hector</a>. All Rights Reserved.
             </span>
           <ul className="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-gray-400 sm:mt-0">
               <li>
-                  <a href="#" className="mr-4 hover:underline md:mr-6 ">About</a>
+                  <a href="#" className="mr-4 hover:underline md:mr-6 ">About me</a>
               </li>
               <li>
-                  <a href="#" className="mr-4 hover:underline md:mr-6">Privacy Policy</a>
-              </li>
-              <li>
-                  <a href="#" className="hover:underline">Contact</a>
+                  <a href="https://www.linkedin.com/in/hector-fr/" target="_blank" rel="noreferrer" className="hover:underline">Contact me through socials</a>
               </li>
           </ul>
           </div>
