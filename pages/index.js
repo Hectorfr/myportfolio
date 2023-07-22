@@ -4,23 +4,13 @@ import {FaTerminal, FaUserSecret, FaJava} from 'react-icons/fa';
 import {SiJavascript, SiTailwindcss, SiReact, SiPython, SiCplusplus} from 'react-icons/si';
 import {TbBrandNextjs, TbScript} from 'react-icons/tb';
 import {VscTerminalBash, VscTerminalPowershell, VscServerEnvironment} from 'react-icons/vsc';
-import {BiShow, BiCar} from 'react-icons/bi';
-
-
+import {BiCar} from 'react-icons/bi';
 import { GiTrophy } from 'react-icons/gi';
 import {BsPersonVcardFill} from 'react-icons/bs'
-
-
 import {useState} from "react";
-
-
-
 
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png";
-
-
-
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -55,14 +45,14 @@ export default function Home() {
                 hector fr
               </h2>
               <h3 className="text-2xl py-2 md:text-3xl">
-                Software developer
+                Software Developer
               </h3>
             <div className="relative mx-auto bg-gradient-to-b from-sky-600 rounded-full w-80 h-80 mt-5 overflow-hidden border-8 border-sky-800 md:h-96 md:w-96">
                 <Image src={deved} layout="fill" objectFit="cover" />
             </div>
   
               <p className="text-md py-5 leading-8 max-w-lg mx-auto p-10 md:text-xl">
-                Freelancer providing services for any programming needs, currently studying <span className="text-blue-700">Computer Science</span> in University.
+                Freelancer providing services for any programming needs, currently studying <span className="text-blue-700">Computer engineering</span> in University.
                 I am keen to continue building on with   <span className="text-blue-700">new challenges</span>, if you find this work interesting, you are more than welcome to contact me.
               </p>
             </div>
@@ -76,7 +66,7 @@ export default function Home() {
           
           <section> 
             <div id="projects">
-              <h3 className="text-3xl text-center py-2">Proyects Overview</h3>    
+              <h3 className="text-3xl text-center py-2">Projects Overview</h3>    
               <p className="py-2 p-10 text-center text-blue-700">
                 For more info try cliking the icons!
               </p>
@@ -95,8 +85,8 @@ export default function Home() {
                   <h3 className="text-lg pt-8 pb-2 font-burtons font-bold">portfolio website</h3>
                   <p className="py-2 p-10">
                     In this project I have put to the test my front-end skills, where I have a created a website from scracth,
-                    this a portfolio showcases my proyects and as such it has to recieve updates whenever I engage or finish one.
-                    Also doing small changes to correct bugs and smooth out the user experience.
+                    this portfolio showcases my proyects and as such it has to recieve updates whenever I engage or finish one.
+                    Also doing small changes to correct bugs and smooth out the user experience with new tecnologies.
                   </p>
 
                   <h4 className="py-2 text-teal-600 dark:text-blue-700">Tools used</h4>
