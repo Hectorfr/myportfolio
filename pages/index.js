@@ -10,7 +10,7 @@ import {BsPersonVcardFill} from 'react-icons/bs'
 import {useState} from "react";
 
 import Image from "next/image";
-import deved from "../public/dev-ed-wave.png";
+import hector from "../public/hector.jpg";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -47,7 +47,7 @@ export default function Home() {
                 Software Developer
               </h3>
             <div className="relative mx-auto bg-gradient-to-b from-sky-600 rounded-full w-80 h-80 mt-5 overflow-hidden border-8 border-sky-800 md:h-96 md:w-96">
-                <Image src={deved} layout="fill" objectFit="cover" />
+                <Image src={hector} layout="fill" objectFit="cover" />
             </div>
   
               <p className="text-md py-5 leading-8 max-w-lg mx-auto p-10 md:text-xl">
@@ -70,7 +70,7 @@ export default function Home() {
                 For more info try cliking the icons!
               </p>
               <p className="py-2 p-10 text-center text-blue-700">
-                Stay tuned to check the in progress blurred proyects!
+                Stay tuned to check the blurred proyects!
               </p>
             </div>
 
@@ -98,14 +98,16 @@ export default function Home() {
                 </div>
 
 
-                <div className="mx-center text-center shadow-lg p-10 rounded-xl my-10 filter blur dark:shadow-2xl dark:border-1 dark:border-cyan-800">
+                <div className="mx-center text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-2xl dark:border-1 dark:border-cyan-800">
+                    <h3 className="text-lg pt-8 pb-2 font-burtons font-bold text-blue-700">In progress.....</h3>
                   <div className="flex items-center justify-center">
-                    <a target="_blank" rel="noreferrer" className="text-cyan-900">  
+                    <a target="_blank" rel="noreferrer" className="text-cyan-900 filter blur ">  
                         <BiCar size={80}/>
                     </a>   
                  </div>
-                  <h3 className="text-lg pt-8 pb-2 font-burtons font-bold">car detection</h3>
-                  <p className="py-2 p-10">
+
+                  <h3 className="text-lg pt-8 pb-2 font-burtons font-bold filter blur">car detection</h3>
+                  <p className="py-2 p-10 filter blur ">
                     Due to the importance of sleeping as much as possible during University, in this case I showcased my python skills
                     from a video the app captures the amount of cars crossing the main street conecting my house and University, to then makes
                     graphs to determine the best and worst times to leave for school in the morning.
@@ -113,8 +115,8 @@ export default function Home() {
 
                   </p>
 
-                  <h4 className="py-2 text-teal-600 dark:text-blue-700">Tools used</h4>
-                  <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-white">
+                  <h4 className="py-2 text-teal-600 filter blur  dark:text-blue-700">Tools used</h4>
+                  <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 filter blur  dark:text-white">
                     <SiPython />
                   </div>
                 </div>
