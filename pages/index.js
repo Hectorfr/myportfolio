@@ -23,7 +23,7 @@ export default function Home() {
         </Head>
 
         <main className="bg-emerald-200 px-10 md:px-20 lg:px-40 dark:bg-gray-900 dark:text-white">
-          <section className="h-screen">
+          <section className="pb-20">
             <nav className= "py-10 mb-8 flex justify-between">
               <h1 className="text-xl">
                 <FaTerminal />
@@ -47,7 +47,7 @@ export default function Home() {
                 Software Developer
               </h3>
             <div className="relative mx-auto bg-gradient-to-b from-sky-600 rounded-full w-80 h-80 mt-5 overflow-hidden border-8 border-sky-800 md:h-96 md:w-96">
-                <Image src={hector} layout="fill" objectFit="cover" />
+                <Image src={hector} layout="fill" objectFit="cover" alt="Picture of myself"/>
             </div>
   
               <p className="text-md py-5 leading-8 max-w-lg mx-auto p-10 md:text-xl">
