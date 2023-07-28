@@ -90,10 +90,10 @@ export default function Home() {
 
                   <h4 className="py-2 text-teal-600 dark:text-blue-700">Tools used</h4>
                   <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-white">
-                    <SiTailwindcss />
-                    <SiJavascript />
-                    <SiReact />
-                    <TbBrandNextjs />
+                    <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><SiTailwindcss /></a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank" rel="noreferrer"><SiJavascript /></a>
+                    <a href="https://react.dev/" target="_blank" rel="noreferrer"><SiReact /></a>
+                    <a href="https://nextjs.org/" target="_blank" rel="noreferrer"><TbBrandNextjs /></a>
                   </div>
                 </div>
 
@@ -117,7 +117,7 @@ export default function Home() {
 
                   <h4 className="py-2 text-teal-600 filter blur  dark:text-blue-700">Tools used</h4>
                   <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 filter blur  dark:text-white">
-                    <SiPython />
+                    <a target="_blank" rel="noreferrer"><SiPython /></a>
                   </div>
                 </div>
 
@@ -136,9 +136,9 @@ export default function Home() {
 
                   <h4 className="py-2 text-teal-600 dark:text-blue-700">Tools used</h4>
                   <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-white">
-                    <VscTerminalBash />
-                    <VscTerminalPowershell />
-                    <VscServerEnvironment />
+                    <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"><VscTerminalBash /></a>
+                    <a href="https://learn.microsoft.com/en-us/powershell/" target="_blank" rel="noreferrer"><VscTerminalPowershell /></a>
+                    <a href="https://www.microsoft.com/en-us/windows-server" target="_blank" rel="noreferrer"><VscServerEnvironment /></a>
                   </div>
 
 
@@ -147,7 +147,7 @@ export default function Home() {
                 <div className="mx-center text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-2xl dark:border-1 dark:border-cyan-800">
                 <div className="flex items-center justify-center">
                     <a href="https://github.com/Hectorfr/Domjudge-exercises" target="_blank" rel="noreferrer" className="text-cyan-900">  
-                        <GiTrophy size={80}/>
+                      <GiTrophy size={80}/>
                     </a>   
                  </div>
                   <h3 className="text-lg pt-8 pb-2 font-burtons font-bold">Competitive programming</h3>
@@ -158,8 +158,8 @@ export default function Home() {
 
                   <h4 className="py-2 text-teal-600 dark:text-blue-700">Tools used</h4>
                   <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-white">
-                    <SiCplusplus />
-                    <FaJava />
+                    <a href="https://cplusplus.com/reference/" target="_blank" rel="noreferrer"><SiCplusplus /></a>
+                    <a href="https://docs.oracle.com/javase/8/docs/api/" target="_blank" rel="noreferrer"><FaJava /></a>
                   </div>
                 </div>
 
