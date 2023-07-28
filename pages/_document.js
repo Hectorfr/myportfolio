@@ -6,7 +6,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
 
-      {/* try when site is up
+      {/* script for google analytics, but not active right now, using other analytics options
 
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNXHZ6M97N"></script>
