@@ -53,7 +53,7 @@ export default function Home() {
   
               <p className="text-md py-5 leading-8 max-w-lg mx-auto p-10 md:text-xl">
                 Freelancer providing services for any programming needs, currently studying <span className="text-blue-700">Computer engineering</span> at University.
-                I am keen to continue building on with   <span className="text-blue-700">new challenges</span>, if you find this work interesting, you are more than welcome to contact me.
+                I am keen to continue building on with   <span className="text-blue-700">new challenges</span>; if you find this work interesting, you are more than welcome to contact me.
               </p>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-white">
