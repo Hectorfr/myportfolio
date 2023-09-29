@@ -10,12 +10,12 @@ import {BsPersonVcardFill} from 'react-icons/bs'
 import {useState} from "react";
 
 import Image from "next/image";
-import hector02 from "../public/hector02.jpg";
+import hector from "../public/hector.jpg";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   return (
-      <div className={darkMode ? "dark bg-blend-darken" : "bg-emerald-200"}>
+      <div className={darkMode ? "dark bg-blend-darken" : "bg-emerald-300"}>
         <Head>
           <title>hectorfr-portfolio</title>
           <meta name="keywords" content="portoflio, hector-fr, web-portfolio, projects, IT" />
@@ -48,7 +48,7 @@ export default function Home() {
                 Software Developer
               </h3>
             <div className="relative mx-auto bg-gradient-to-b from-sky-600 rounded-full w-80 h-80 mt-5 overflow-hidden border-8 border-sky-800 md:h-96 md:w-96">
-                <Image src={hector02} layout="fill" objectFit="cover" alt="portoflio picture of hectorfr"/>
+                <Image src={hector} layout="fill" objectFit="cover" alt="portoflio picture of hectorfr"/>
             </div>
   
               <p className="text-md py-5 leading-8 max-w-lg mx-auto p-10 md:text-xl">
