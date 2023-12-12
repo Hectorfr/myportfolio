@@ -4,7 +4,8 @@ import {FaTerminal, FaUserSecret, FaJava} from 'react-icons/fa';
 import {SiJavascript, SiTailwindcss, SiReact, SiPython, SiCplusplus} from 'react-icons/si';
 import {TbBrandNextjs, TbScript} from 'react-icons/tb';
 import {VscTerminalBash, VscTerminalPowershell, VscServerEnvironment} from 'react-icons/vsc';
-import {BiCar} from 'react-icons/bi';
+import {BiCar} from
+ 'react-icons/bi';
 import { GiTrophy } from 'react-icons/gi';
 import {BsPersonVcardFill} from 'react-icons/bs'
 import {useState} from "react";
@@ -151,7 +152,7 @@ export default function Home() {
                  </div>
                   <h3 className="text-lg pt-8 pb-2 font-burtons font-bold">Competitive programming</h3>
                   <p className="py-2 p-10">
-                    CP is a concept which was introduced to me trough a friend in my first year in University, since then I have always been keen to learn more
+                    CP is a concept which was introduced to me through a friend in my first year in University, since then I have always been keen to learn more
                     and more algorithms, data structures, dynamic programming to get better at it, compete and keep on learning. Here is some of my work in this area.
                   </p>
 
